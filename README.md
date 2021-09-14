@@ -1,8 +1,19 @@
-## 安装evo依赖：
+## 环境：
+
+ubuntu18.04+ros-melodic
+
+## 依赖：
+
+## 1.安装evo：
 
 $ pip install evo --upgrade --no-binary evo
 
 ## 编译：
+$ cd catkin_ws/src/
+
+$ git clone https://github.com/AIRS-TJ/view.git
+ 
+$ cd ..
 
 $ catkin_make
 
@@ -10,7 +21,7 @@ $ catkin_make
 
 ## 1.对齐两条轨迹
 
-$ cd view/
+$ cd src/view/
 
 $ ./align.py data/1/fuse1811.bag /vrpn_client_node/bluerov/pose /odometry/filtered
 
