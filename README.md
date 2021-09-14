@@ -15,6 +15,8 @@ $ cd view/
 
 $ ./align.py data/1/fuse1811.bag /vrpn_client_node/bluerov/pose /odometry/filtered
 
+说明：/vrpn_client_node/bluerov/pose 是对齐的参考轨迹，参考轨迹放前面
+
 在当前目录下输出output.bag
 
 2.截取图像的主题
