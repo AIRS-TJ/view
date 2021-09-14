@@ -4,7 +4,7 @@ ubuntu18.04+ros-melodic
 
 ## 依赖：
 
-## 1.安装evo：
+安装evo：
 
 $ pip install evo --upgrade --no-binary evo
 
