@@ -97,7 +97,7 @@ def umeyama_alignment(x, y,with_scale):
 
 if __name__=="__main__":
 
-    if len(sys.argv) < 4:
+    if len(sys.argv) < 5:
         print("usage: my_node.py arg1:input_bag_path arg2:trj_ref arg3:trj_est arg4:output_bag_path ")
     else:
         if not os.path.exists(sys.argv[1]):
