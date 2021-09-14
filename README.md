@@ -24,11 +24,11 @@ $ rosbag filter data/1/2021-08-27-18-11all.bag output2.bag "topic=='/davis_left/
 
 在当前目录下输出output2.bag
 
-## 3.合并包，将output.bag和output2.bag合并成output3.bag
+## 3.合并包
 
 $ ./merge_bag.py -v output3.bag output.bag output2.bag
 
-在当前目录下输出output3.bag
+将output.bag和output2.bag合并成output3.bag，在当前目录下输出output3.bag
 
 ## 4.显示
 
