@@ -98,7 +98,7 @@ def umeyama_alignment(x, y,with_scale):
 if __name__=="__main__":
 
     if len(sys.argv) < 4:
-        print("usage: my_node.py arg1:bag_path arg2:trj_ref arg3:trj_est")
+        print("usage: my_node.py arg1:input_bag_path arg2:trj_ref arg3:trj_est arg4:output_bag_path ")
     else:
         if not os.path.exists(sys.argv[1]):
             sys.exit('ERROR: %s was not found!' % sys.argv[1])
@@ -115,7 +115,7 @@ if __name__=="__main__":
         traj_est.scale(s)
         align_origin(traj_est,traj_ref)
         set_origin(traj_est,traj_ref)  
-        with rosbag.Bag('output.bag', 'w') as outbag:
+        with rosbag.Bag(sys.argv[4], 'w') as outbag:
             i=0
             for topic_ref, msg_ref, t in rosbag.Bag(sys.argv[1]).read_messages(topic_ref):
                 msg_ref_pub = msg_ref
