@@ -3,6 +3,10 @@
 
 $ pip install evo --upgrade --no-binary evo
 
+编译：
+
+$ catkin_make
+
 运行步骤:
 
 1.对齐两条轨迹
