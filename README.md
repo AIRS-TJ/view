@@ -7,6 +7,8 @@ $ pip install evo --upgrade --no-binary evo
 
 1.对齐两条轨迹
 
+$ cd view/
+
 $ ./align.py data/1/fuse1811.bag /vrpn_client_node/bluerov/pose /odometry/filtered
 
 在当前目录下输出output.bag
