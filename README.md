@@ -25,7 +25,7 @@ $ catkin_make
 
 $ cd src/view/
 
-$ ./align.py data/1/fuse1811.bag /vrpn_client_node/bluerov/pose /odometry/filtered
+$ ./align.py data/1/fuse1811.bag /vrpn_client_node/bluerov/pose /odometry/filtered output.bag
 
 说明：/vrpn_client_node/bluerov/pose 是对齐的参考轨迹，参考轨迹放前面
 
