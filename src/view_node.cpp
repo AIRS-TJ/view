@@ -91,7 +91,7 @@ int main(int argc, char** argv)
 	ros::init(argc, argv, "view_node");
   	ros::NodeHandle n("~");  
 	n.param("marker_scale",marker_scale,double(1.0));
-    ROS_INFO_STREAM("marker_scale:"<<marker_scale);
+        ROS_INFO_STREAM("marker_scale:"<<marker_scale);
 
 	AngleAxisd rv1_odom (M_PI/2, Eigen::Vector3d(0, 1, 0)); 
 	AngleAxisd rv2_odom (M_PI/2, Eigen::Vector3d(0,0, 1)); 
@@ -114,8 +114,8 @@ int main(int argc, char** argv)
 
   	odom_pub = n.advertise<nav_msgs::Path>("/odometry/filtered_path", 100);
 	pose_pub = n.advertise<nav_msgs::Path>("/vrpn_client_node/bluerov/pose_path", 100);
-    pub_odom_pose_visual = n.advertise<visualization_msgs::MarkerArray>("odom_pose_visual", 1000);
-    pub_bluerov_pose_visual = n.advertise<visualization_msgs::MarkerArray>("bluerov_pose_visual", 1000);
+        pub_odom_pose_visual = n.advertise<visualization_msgs::MarkerArray>("odom_pose_visual", 1000);
+        pub_bluerov_pose_visual = n.advertise<visualization_msgs::MarkerArray>("bluerov_pose_visual", 1000);
   	ros::spin();
   	return 0;
 
