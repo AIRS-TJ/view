@@ -19,7 +19,7 @@ ubuntu18.04+ros-melodic
 
 	$ catkin_make
 
-# 运行步骤
+# 运行
 
 ## 1.对齐两条轨迹
 
