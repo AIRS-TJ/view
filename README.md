@@ -1,8 +1,8 @@
-## 环境：
+# 环境
 
 ubuntu18.04+ros-melodic
 
-## 依赖：
+# 依赖
 
 安装evo：
 
@@ -10,7 +10,7 @@ ubuntu18.04+ros-melodic
 
 说明：只有align.py需要evo
 
-## 编译：
+# 编译
 	$ cd catkin_ws/src/
 
 	$ git clone https://github.com/AIRS-TJ/view.git
@@ -19,7 +19,7 @@ ubuntu18.04+ros-melodic
 
 	$ catkin_make
 
-## 运行步骤:
+# 运行步骤
 
 ## 1.对齐两条轨迹
 
@@ -33,7 +33,7 @@ ubuntu18.04+ros-melodic
 
 ## 2.截取图像的主题
 
-$ rosbag filter data/1/2021-08-27-18-11all.bag output2.bag "topic=='/davis_left/image_raw'"
+	$ rosbag filter data/1/2021-08-27-18-11all.bag output2.bag "topic=='/davis_left/image_raw'"
 
 在当前目录下输出output2.bag
 
