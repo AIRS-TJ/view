@@ -27,7 +27,7 @@ ubuntu18.04+ros-melodic
 
 	$ ./align.py data/1/fuse1811.bag /vrpn_client_node/bluerov/pose /odometry/filtered output.bag
 
-说明：/vrpn_client_node/bluerov/pose 是对齐的参考轨迹，参考轨迹放前面
+说明：/vrpn_client_node/bluerov/pose 是对齐的参考轨迹，/odometry/filtered是要对齐的轨迹，参考轨迹放前面
 
 在当前目录下输出output.bag
 
