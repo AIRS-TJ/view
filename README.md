@@ -29,7 +29,7 @@ ubuntu18.04+ros-melodic
 
 说明：/vrpn_client_node/bluerov/pose 是对齐的参考轨迹，/odometry/filtered是要对齐的轨迹，参考轨迹放前面
 
-在当前目录下输出output.bag
+data/1/fuse1811.bag是输入的bag，会在当前目录下输出output.bag
 
 ## 2.截取图像的主题
 
